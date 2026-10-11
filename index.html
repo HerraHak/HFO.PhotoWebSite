@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HFO — Photography</title>
+  <meta name="description" content="Portfolio of an aspiring photographer: selected studies, the qualities behind them, and the craft those pictures test.">
+  <meta name="theme-color" content="#161311">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,560;1,9..144,500&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/01-window.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    if (location.hash) document.documentElement.style.scrollBehavior = "auto";
+  </script>
+</head>
+<body id="top">
+  <a class="skip" href="#work">Skip to the studies</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="mark" href="#top">HFO</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#qualities">Qualities</a>
+      <a href="#craft">Craft</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-media">
+        <img src="images/01-window.jpg" width="1500" height="1000" alt="A woman in profile beside a tall window, late-afternoon light across a plaster wall and the shoulder of her linen shirt." fetchpriority="high">
+        <p class="hero-caption"><span>01</span> Window, profile</p>
+      </div>
+      <div class="hero-sheet">
+        <div class="wrap title-row">
+          <div>
+            <p class="kicker">Aspiring photographer</p>
+            <h1>Light, <em>held still.</em></h1>
+          </div>
+          <p class="title-aside">Studies in portrait, street, landscape, and still life. Eight pictures, then one morning told in four frames.</p>
+        </div>
+        <div class="wrap intent">
+          <ol class="vows">
+            <li><span>01</span> Attention</li>
+            <li><span>02</span> Simple light</li>
+            <li><span>03</span> Knowing when to stop</li>
+          </ol>
+          <p>A portfolio of studies. The pictures are the argument: patience, plain light, and a finish that keeps the hour intact.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sample photographs. Replace the files in images/ with a real body of work; captions live in this file. -->
+    <section id="work" class="band-paper">
+      <div class="wrap">
+        <header class="section-head">
+          <div>
+            <p class="index">01 — Work</p>
+            <h2>Selected studies</h2>
+          </div>
+          <p class="section-lead">Each picture is here because of a decision you can point to: where to stand, what to leave large, and which edge of light to trust.</p>
+        </header>
+
+        <div class="filters" role="toolbar" aria-label="Filter studies">
+          <button type="button" class="is-on" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="portrait" aria-pressed="false">Portrait</button>
+          <button type="button" data-filter="street" aria-pressed="false">Street</button>
+          <button type="button" data-filter="landscape" aria-pressed="false">Landscape</button>
+          <button type="button" data-filter="still" aria-pressed="false">Still life</button>
+          <button type="button" data-filter="light" aria-pressed="false">Light</button>
+          <button type="button" data-filter="detail" aria-pressed="false">Detail</button>
+        </div>
+
+        <div class="grid">
+          <article class="frame g-7" data-cat="portrait" data-title="Window, profile" data-meta="Portrait · Window light" data-note="One window, one edge of light. The open wall gives her room to look into." data-alt="A woman in profile beside a tall window, late-afternoon light across a plaster wall and the shoulder of her linen shirt.">
+            <button type="button" class="frame-hit">
+              <span class="shot"><img src="images/01-window.jpg" width="1500" height="1000" alt=""></span>
+              <span class="cap">
+                <span class="num">01</span>
+                <span>
+                  <strong>Window, profile</strong>
+                  <em>Portrait</em>
+                  <span class="note">One window, one edge of light. The open wall gives her room to look into.</span>
+                </span>
+              </span>
+            </button>
+          </article>
+
+          <article class="frame g-5 crop-tall" data-cat="light" data-title="The landing" data-meta="Light · Stairwell" data-note="Architecture used as a light study. The stair is there to catch a blade of sun." data-alt="An empty plaster stairwell with a blade of sunlight across the steps and the wall.">
+            <button type="button" class="frame-hit">
+              <span class="shot"><img class="pos-high" src="images/05-stair.jpg" width="1500" height="1000" alt="" loading="lazy"></span>
+              <span class="cap">
+                <span class="num">02</span>
+                <span>
+                  <strong>The landing</strong>
+                  <em>Light</em>
+                  <span class="note">Architecture used as a light study. The stair is there to catch a blade of sun.</span>
+                </span>
+              </span>
+            </button>
+          </article>
+
+          <article class="frame g-5" data-cat="street" data-title="After rain" data-meta="Street · Dusk" data-note="The wet road is a second exposure. The figure stays small so the street can shine." data-alt="A city street just after rain at dusk, wet asphalt reflecting a warm shop window, one figure walking away.">
+            <button type="button" class="frame-hit">
+              <span class="shot"><img src="images/02-rain.jpg" width="1500" height="1000" alt="" loading="lazy"></span>
+              <span class="cap">
+                <span class="num">03</span>
+                <span>
+                  <strong>After rain</strong>
+                  <em>Street</em>
+                  <span class="note">The wet road is a second exposure. The figure stays small so the street can shine.</span>
+                </span>
+              </span>
+            </button>
+          </article>
+
+          <article class="frame g-7" data-cat="landscape" data-title="Low horizon" data-meta="Landscape · After rain" data-note="The sky has the weight, so the horizon sits low and one tree carries the land." data-alt="Open country after rain, a single tree on a low rise under a wide clouded sky.">
+            <button type="button" class="frame-hit">
+              <span class="shot"><img src="images/03-weather.jpg" width="1500" height="1000" alt="" loading="lazy"></span>
+              <span class="cap">
+                <span class="num">04</span>
+                <span>
+                  <strong>Low horizon</strong>
+                  <em>Landscape</em>
+                  <span class="note">The sky has the weight, so the horizon sits low and one tree carries the land.</span>
+                </span>
+              </span>
+            </button>
+          </article>
+
+          <article class="frame g-12 crop-wide" data-cat="landscape" data-title="The long path" data-meta="Landscape · Late day" data-note="Scale is the decision. The walker is a mark in the grass, and the path does the leading." data-alt="A path through tall pale grass with one small distant figure walking away under a wide sky.">
+            <button type="button" class="frame-hit">
+              <span class="shot"><img src="images/07-field.jpg" width="1500" height="1000" alt="" loading="lazy"></span>
+              <span class="cap">
+                <span class="num">05</span>
+                <span>
+                  <strong>The long path</strong>
+                  <em>Landscape</em>
+                  <span class="note">Scale is the decision. The walker is a mark in the grass, and the path does the leading.</span>
+                </span>
+              </span>
+            </button>
+          </article>
+
+          <article class="frame g-4 crop-square" data-cat="still" data-title="Cup and orange" data-meta="Still life · Window" data-note="A hard patch of sun and a quiet object. The table is a landscape in miniature." data-alt="A still life on a worn wooden table: a pale ceramic cup, a cut orange, and a hard-edged patch of sunlight.">
+            <button type="button" class="frame-hit">
+              <span class="shot"><img src="images/04-table.jpg" width="1500" height="1000" alt="" loading="lazy"></span>
+              <span class="cap">
+                <span class="num">06</span>
+                <span>
+                  <strong>Cup and orange</strong>
+                  <em>Still life</em>
+                  <span class="note">A hard patch of sun and a quiet object. The table is a landscape in miniature.</span>
+                </span>
+              </span>
+            </button>
+          </article>
+
+          <article class="frame g-4 crop-square" data-cat="detail" data-title="Stems" data-meta="Detail · Hands" data-note="Cropped close to the work. The gesture is the subject." data-alt="An adult's hands arranging a loose bunch of stems and leaves on a table in window light.">
+            <button type="button" class="frame-hit">
+              <span class="shot"><img src="images/06-hands.jpg" width="1500" height="1000" alt="" loading="lazy"></span>
+              <span class="cap">
+                <span class="num">07</span>
+                <span>
+                  <strong>Stems</strong>
+                  <em>Detail</em>
+                  <span class="note">Cropped close to the work. The gesture is the subject.</span>
+                </span>
+              </span>
+            </button>
+          </article>
+
+          <article class="frame g-4 crop-tall" data-cat="portrait" data-title="The chair" data-meta="Portrait · Side light" data-note="A plain room, light from one side, and time enough to settle. The chair is part of the posture." data-alt="A man seated on a wooden chair in a plain room, soft side light from a window, hands resting.">
+            <button type="button" class="frame-hit">
+              <span class="shot"><img class="pos-high" src="images/08-seat.jpg" width="1500" height="1000" alt="" loading="lazy"></span>
+              <span class="cap">
+                <span class="num">08</span>
+                <span>
+                  <strong>The chair</strong>
+                  <em>Portrait</em>
+                  <span class="note">A plain room, light from one side, and time enough to settle. The chair is part of the posture.</span>
+                </span>
+              </span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="qualities" class="band-ink">
+      <div class="wrap">
+        <header class="section-head">
+          <div>
+            <p class="index">02 — Qualities</p>
+            <h2>What the work depends on</h2>
+          </div>
+          <p class="section-lead">Before the camera comes up. These are the habits a careful photographer is built from.</p>
+        </header>
+        <ol class="qualities">
+          <li>
+            <span class="q-num">01</span>
+            <h3>Patience</h3>
+            <p>The frame stays until the moment finishes. A walk, a hand around a cup, a change in the cloud.</p>
+          </li>
+          <li>
+            <span class="q-num">02</span>
+            <h3>Restraint</h3>
+            <p>One light and one subject. What is left out of the frame is part of the picture.</p>
+          </li>
+          <li>
+            <span class="q-num">03</span>
+            <h3>Empathy</h3>
+            <p>People are met at the distance they offer. A portrait waits to be invited closer.</p>
+          </li>
+          <li>
+            <span class="q-num">04</span>
+            <h3>Curiosity</h3>
+            <p>Stairs, cups, wet roads. Ordinary things, looked at as if they might answer.</p>
+          </li>
+          <li>
+            <span class="q-num">05</span>
+            <h3>Accuracy</h3>
+            <p>Color follows the hour. Skin stays skin. A highlight is kept when it was really there.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="craft" class="band-paper">
+      <div class="wrap">
+        <header class="section-head">
+          <div>
+            <p class="index">03 — Craft</p>
+            <h2>Aptitude, tested</h2>
+          </div>
+          <p class="section-lead">Skill you can check against the pictures: exposure, placement, light, color, sequence, and finish.</p>
+        </header>
+
+        <dl class="craft">
+          <div>
+            <dt>Exposure</dt>
+            <dd>Linen by the window keeps its weave. A shop lamp at dusk stays a lamp. Shadows open enough to read the room.</dd>
+          </div>
+          <div>
+            <dt>Placement</dt>
+            <dd>A face sits in open wall when the wall belongs to the portrait. The horizon drops when the sky is doing the work. The figure in the grass is small on purpose.</dd>
+          </div>
+          <div>
+            <dt>Light</dt>
+            <dd>Windows, overcast sky, and lamps that were already on. Shape comes from one source and the shadow it draws.</dd>
+          </div>
+          <div>
+            <dt>Color</dt>
+            <dd>A warm shadow against a cooler day. The same grade runs through the set, so the studies belong to one eye.</dd>
+          </div>
+          <div>
+            <dt>Sequence</dt>
+            <dd>The morning below is four frames of one sitting. Each cut moves closer to the gesture, then steps back and lets the room end it.</dd>
+          </div>
+          <div>
+            <dt>Finish</dt>
+            <dd>Grain stays fine. Skin and plaster keep their texture. The crop stays close to what the frame saw.</dd>
+          </div>
+        </dl>
+
+        <div class="sequence">
+          <header class="section-head">
+            <div>
+              <p class="index">One morning</p>
+              <h3>Four frames, one room</h3>
+            </div>
+            <p class="section-lead">Arriving, attending, the gesture, then the room once it is quiet. A small story is a kind of aptitude.</p>
+          </header>
+          <div class="film">
+            <article class="still" data-title="Arrival" data-meta="Morning · Frame 01" data-note="He is at the table, the paper open, the cup in both hands." data-alt="An older man seated at a wooden kitchen table beside a window, holding a ceramic cup, with a newspaper open in the sunlight.">
+              <button type="button" class="frame-hit">
+                <span class="shot"><img src="images/morning-1.jpg" width="1500" height="1000" alt="" loading="lazy"></span>
+                <span class="cap">
+                  <span class="num">01</span>
+                  <span><strong>Arrival</strong><em>The morning is still wide.</em></span>
+                </span>
+              </button>
+            </article>
+            <article class="still" data-title="The cup" data-meta="Morning · Frame 02" data-note="Attention narrows. The hands find the warmth of the cup." data-alt="The same man at the same kitchen table, looking down, both hands around a ceramic cup.">
+              <button type="button" class="frame-hit">
+                <span class="shot"><img src="images/morning-2.jpg" width="1500" height="1000" alt="" loading="lazy"></span>
+                <span class="cap">
+                  <span class="num">02</span>
+                  <span><strong>The cup</strong><em>Attention narrows.</em></span>
+                </span>
+              </button>
+            </article>
+            <article class="still" data-title="Hands" data-meta="Morning · Frame 03" data-note="The story moves from the person to the gesture." data-alt="A closer view of the same table: hands around the cup, the face out of frame, the edge of a newspaper visible.">
+              <button type="button" class="frame-hit">
+                <span class="shot"><img src="images/morning-3.jpg" width="1500" height="1000" alt="" loading="lazy"></span>
+                <span class="cap">
+                  <span class="num">03</span>
+                  <span><strong>Hands</strong><em>The gesture takes over.</em></span>
+                </span>
+              </button>
+            </article>
+            <article class="still" data-title="After" data-meta="Morning · Frame 04" data-note="The chair is empty, the cup remains, and the window is a little brighter." data-alt="The same kitchen later, the chair empty, the cup still on the table, brighter light from the window.">
+              <button type="button" class="frame-hit">
+                <span class="shot"><img src="images/morning-4.jpg" width="1500" height="1000" alt="" loading="lazy"></span>
+                <span class="cap">
+                  <span class="num">04</span>
+                  <span><strong>After</strong><em>The room ends it.</em></span>
+                </span>
+              </button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="band-ink">
+      <div class="wrap contact-grid">
+        <header>
+          <p class="index">04 — Contact</p>
+          <h2>A sitting, an assist, a walk.</h2>
+          <p class="section-lead">Portraits at home, small commissions, and second-shooter work for someone who wants a careful extra pair of eyes.</p>
+          <p class="mail-line"><a data-mail href="mailto:studio@example.com">studio@example.com</a></p>
+        </header>
+        <form class="note" action="mailto:studio@example.com" method="post" enctype="text/plain">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label class="full">
+            <span>What you have in mind</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="full form-row">
+            <button type="submit">Open a note</button>
+            <p class="form-status" role="status"></p>
+          </div>
+        </form>
+      </div>
+      <footer class="foot">
+        <div class="wrap foot-row">
+          <span class="mark">HFO</span>
+          <span>Photography</span>
+          <span><span data-year>2026</span></span>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <dialog class="lightbox" aria-label="Study">
+    <div class="lb-bar">
+      <p class="lb-count"></p>
+      <button type="button" class="lb-close">Close</button>
+    </div>
+    <figure class="lb-figure">
+      <img alt="">
+      <figcaption>
+        <p class="lb-meta"></p>
+        <h3 class="lb-title"></h3>
+        <p class="lb-note"></p>
+      </figcaption>
+    </figure>
+    <div class="lb-nav">
+      <button type="button" class="lb-prev">Previous</button>
+      <button type="button" class="lb-next">Next</button>
+    </div>
+  </dialog>
+
+  <script src="main.js"></script>
+</body>
+</html>
